@@ -6,7 +6,7 @@ struct node {
     struct node * next;
     struct node * prev;
 };
-/*  Struct HEad pull*/
+/*  Struct Head pull*/
 struct node * head = NULL;
 
 void insertBeginning(int item) {
@@ -32,16 +32,11 @@ void insertAtEnd(int item) {
     temp->prev = trav;
 }
 void print() {
-    struct node * traverse = head, * dump;
+    struct node * traverse = head;
     while(traverse != NULL) {
-//dump=traverse;
         printf("%d ", traverse->data);
         traverse = traverse->next;
     }
-   // while(dump != NULL) {
-   //    printf("%d ", dump->data);
-   //    dump = dump->prev;
-   // }
     printf("\n");
 }
 void delete() {
@@ -65,9 +60,9 @@ void deleteBeg() {
 int main() {
     insertBeginning(234);
     insertBeginning(32);
- insertAtEnd(65);
- print();
- delete();
+    insertAtEnd(65);
+    print();
+    delete();
     insertBeginning(496);
     insertBeginning(642);
     deleteBeg();
