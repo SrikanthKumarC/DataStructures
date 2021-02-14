@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* 
+    Additional Verification required.
+                                Apache License
+                           Version 2.0, January 2004
+                        https://www.apache.org/licenses/
+*/
+
+
 struct node {
     int integer;
     struct node * next;
